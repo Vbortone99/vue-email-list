@@ -16,8 +16,8 @@
         <div id="app">
             <div class="container d-flex justify-content-center ">
                 <div class="row-cols-12">
-                    <ul>
-                        <li v-for="mail in emails">{{mail}}</li>
+                    <ul v-if="emails.length == 10">
+                        <li class="fw-bold py-2" v-for="mail in emails">{{mail}}</li>
                     </ul>
                 </div>
             </div>
